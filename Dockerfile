@@ -1,5 +1,5 @@
-FROM tutum/lamp:latest
-MAINTAINER Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
+FROM joaquindlz/rpi-docker-lamp:latest
+MAINTAINER Joaquín de la Zerda <joaquindelazerda@gmail.com>, Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
 
 # Install plugins
 RUN apt-get update && \
