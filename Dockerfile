@@ -1,10 +1,9 @@
-FROM joaquindlz/rpi-docker-lamp:latest
-MAINTAINER Joaquín de la Zerda <joaquindelazerda@gmail.com>, Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
+FROM oscarortegano/rpi-docker-lamp:latest
+MAINTAINER Oscar Ortegano <oscarortegano@gmail.com>, Joaquín de la Zerda <joaquindelazerda@gmail.com>, Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
 
 # Install plugins
 RUN apt-get update && \
-  apt-get -y install php5-gd && \
-  rm -rf /var/lib/apt/lists/*
+  apt-get -y install php7.0-gd php-xml php7.0-xml
 
 # Download latest version of Wordpress into /app
 RUN rm -fr /app && git clone --depth=1 https://github.com/WordPress/WordPress.git /app
