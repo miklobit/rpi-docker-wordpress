@@ -2,7 +2,7 @@ FROM miklobit/rpi-docker-lamp:latest
 MAINTAINER MikloBit <miklobit@gmail.com>
 # Install plugins
 RUN apt-get update && \
-  apt-get -y install php7.0-gd php-xml php7.0-xml
+  apt-get -y install php7.3-gd php-xml php7.3-xml
 
 # Download latest version of Wordpress into /app
 RUN rm -fr /app && git clone --depth=1 https://github.com/WordPress/WordPress.git /app
