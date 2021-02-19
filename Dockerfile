@@ -1,6 +1,5 @@
-FROM oscarortegano/rpi-docker-lamp:latest
-MAINTAINER Oscar Ortegano <oscarortegano@gmail.com>, Joaquín de la Zerda <joaquindelazerda@gmail.com>, Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
-
+FROM miklobit/rpi-docker-lamp:latest
+MAINTAINER MikloBit <miklobit@gmail.com>
 # Install plugins
 RUN apt-get update && \
   apt-get -y install php7.0-gd php-xml php7.0-xml
